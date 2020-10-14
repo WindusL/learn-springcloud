@@ -12,10 +12,18 @@
     <artifactId>learn-springcloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>learn-springcloud</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>eureka-server</module>
+        <module>eureka-client-user-service</module>
+        <module>eureka-client-service-consumer</module>
+    </modules>
 
     <properties>
         <java.version>11</java.version>
+        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -47,6 +55,18 @@
             </exclusions>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
