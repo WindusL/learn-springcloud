@@ -9,9 +9,9 @@
     </parent>
 
     <groupId>com.fcwalkers.learn.springcloud</groupId>
-    <artifactId>eureka-client-service-consumer</artifactId>
+    <artifactId>ribbon-client-service-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-client-service-consumer</name>
+    <name>ribbon-client-service-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -19,6 +19,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!--引入ribbon（可以省略，因为eureka包中已经引用）-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
     </dependencies>
 

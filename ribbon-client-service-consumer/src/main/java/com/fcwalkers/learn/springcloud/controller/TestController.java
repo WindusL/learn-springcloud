@@ -12,7 +12,7 @@ public class TestController {
     @Resource
     private RestTemplate restTemplate;
 
-    @GetMapping("/getTest")
+    @GetMapping("/ribbon/getTest")
     public String getTest() {
         return restTemplate.getForObject("http://eureka-client-user-service/hello", String.class);
     }

@@ -1,4 +1,4 @@
-package com.fcwalkers.learn.springcloud;
+package com.fcwalkers.learn.springcloud.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

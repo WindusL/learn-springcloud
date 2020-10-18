@@ -18,7 +18,8 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client-user-service</module>
-        <module>eureka-client-service-consumer</module>
+        <module>ribbon-client-service-consumer</module>
+        <module>feign-client-service-consumer</module>
     </modules>
 
     <properties>
