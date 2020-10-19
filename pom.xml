@@ -16,14 +16,17 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>eureka-server</module>
+        <module>eureka-server7001</module>
+        <module>eureka-server7002</module>
+        <module>eureka-server7003</module>
         <module>eureka-client-user-service</module>
         <module>ribbon-client-service-consumer</module>
         <module>feign-client-service-consumer</module>
 
-        <module>payment-service</module>
         <module>springcloud-common</module>
-        <module>order-consumer</module>
+        <module>payment-service8001</module>
+        <module>payment-service8002</module>
+        <module>order-consumer80</module>
     </modules>
 
     <properties>
