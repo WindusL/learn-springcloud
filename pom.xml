@@ -24,9 +24,15 @@
         <module>feign-client-service-consumer</module>
 
         <module>springcloud-common</module>
+
+        <!--eureka 服务-->
         <module>payment-service8001</module>
         <module>payment-service8002</module>
         <module>order-consumer80</module>
+
+        <!--zookeeper 服务-->
+        <module>payment-service8004</module>
+        <module>order-consumerzk80</module>
     </modules>
 
     <properties>
