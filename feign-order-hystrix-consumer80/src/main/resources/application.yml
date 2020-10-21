@@ -1,0 +1,24 @@
+# 服务名称
+spring:
+  application:
+    name: feign-order-hystrix-consumer
+
+# 服务端口号
+server:
+  port: 80
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@eureka7001.com:7001/eureka/,http://admin:123456@eureka7002.com:7002/eureka,http://admin:123456@eureka7003.com:7003/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+
+# Feign超时配置（默认Feign支持ribbon)
+#ribbon:
+#  ReadTimeout: 5000
+#  ConnectTimeout: 5000
+
+# 开启 hystrix 支持
+feign:
+  hystrix:
+    enabled: true

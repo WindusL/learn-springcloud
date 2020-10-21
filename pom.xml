@@ -33,6 +33,11 @@
         <!--zookeeper 服务-->
         <module>payment-service8004</module>
         <module>order-consumerzk80</module>
+
+        <!--熔断服务-->
+        <module>payment-hystrix-service8001</module>
+        <module>feign-order-hystrix-consumer80</module>
+        <module>springcloud-hystrix-dashboard</module>
     </modules>
 
     <properties>
