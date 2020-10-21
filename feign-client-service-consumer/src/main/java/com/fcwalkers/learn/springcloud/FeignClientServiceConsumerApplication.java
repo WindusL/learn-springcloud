@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.fcwalkers.learn.springcloud.client")
+@EnableFeignClients(basePackages = "com.fcwalkers.learn.springcloud.service")
 public class FeignClientServiceConsumerApplication {
 
     public static void main(String[] args) {
