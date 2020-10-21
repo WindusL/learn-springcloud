@@ -9,7 +9,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ttp://admin:123456@eureka7001.com:7001/eureka/,http://admin:123456@eureka7002.com:7002/eureka,http://admin:123456@eureka7003.com:7003/eureka
+      defaultZone: http://admin:123456@eureka7001.com:7001/eureka/,http://admin:123456@eureka7002.com:7002/eureka,http://admin:123456@eureka7003.com:7003/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
 
