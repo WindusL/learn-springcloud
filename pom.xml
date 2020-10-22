@@ -38,6 +38,7 @@
         <module>payment-hystrix-service8001</module>
         <module>feign-order-hystrix-consumer80</module>
         <module>springcloud-hystrix-dashboard</module>
+        <module>springcloud-gateway</module>
     </modules>
 
     <properties>
@@ -51,8 +52,12 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.3.3.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
